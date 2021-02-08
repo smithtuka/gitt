@@ -11,9 +11,8 @@ public class ValidateSubsequence {
         int count =0;
         for(int i =0;  i<sub.length; i++){
             for(int j=count; j<arr1.length; j++){
-                System.out.println(j);
                 if(sub[i]==arr1[j]) {
-                    count = j;
+                    count = j+1;
                     break;
                 }
                 if(j==arr1.length-1) return  false;
