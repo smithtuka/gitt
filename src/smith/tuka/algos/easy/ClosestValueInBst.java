@@ -8,7 +8,7 @@ public class ClosestValueInBst {
     public static int findClosestValueInBst(BST tree, int target) {
         int previousDiff =0, currentDiff =0;
 
-        while(currentDiff<previousDiff) {
+        while(currentDiff < previousDiff) {
             if (target == tree.value) return target;
             else {
                 tree = Math.abs(target - tree.left.value) < Math.abs(target - tree.right.value) ? tree.left : tree.right;
