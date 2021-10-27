@@ -11,7 +11,7 @@ public class TwoNumberSum {
         System.out.println(Arrays.toString(towNumberSumIII(input, target)));
     }
 
-    //    O(N) time
+    //    O(N2) time
 //    O(N) space
     private static int[] towNumberSum(int[] input, int target) {
         for (int i = 0; i < input.length; i++) {
